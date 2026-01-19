@@ -1,0 +1,14 @@
+/* Smoothly handle the shrinking header */
+.header-transition { 
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+/* Ensure dropdowns aren't cut off by the header container */
+.allow-dropdown { 
+    overflow: visible !important; 
+}
+
+/* Ensure the logo maintains its aspect ratio during the morph */
+.logo-morph {
+    object-contain: center;
+}
